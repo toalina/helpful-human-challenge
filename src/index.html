@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Helpful Human Dev Challenge</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+    <header>
+      <nav> <!-- Collapsed nav -->
+        <ul>
+          <li>Create a Class</li>
+          <li>View Class List</li>
+        </ul>
+      </nav>
+      <h1>Create a Class</h1>
+      <ul>
+        <li>Details</li>
+        <li>Schedule</li>
+        <li>Payment</li>
+        <li>Confirm</li>
+      </ul>
+    </header>
+
+    <section>
+      <form>
+        <label for="classNname">Class Name</label>
+        <input type="text" name="className">
+      </form>
+
+      <form>
+        <!-- Radio buttons -->
+        <input type="radio" id="daily" name="daily" value="daily">
+        <label for="daily">Daily</label>
+        <input type="radio" id="weekly" name="weekly" value="weekly">
+        <label for="weekly">Weekly</label>
+        <input type="radio" id="monthly" name="monthly" value="monthly">
+        <label for="monthly">Monthly</label>
+
+        <input type="text" placeholder="Room Location" name="roomLocation">
+
+        <input type="text" placeholder="Class Type" name="classType">
+
+        <input type="text" placeholder="Maximum Age" name="maxAge">
+        <input type="text" placeholder="Minimum Age" name="minAge">
+        <input type="text" placeholder="Max Class Size" name="maxSize">
+
+        <label for="description">Description</label>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+
+
+        <button type="cancel" value="Cancel">Cancel</button>
+        <button type="submit" value="Submit">Submit</button>
+
+      </form>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/packed.js"></script>
+  </body>
+</html>
