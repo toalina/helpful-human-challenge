@@ -19,16 +19,12 @@ module.exports = {
     src: src + "/index.html",
     dest: dest + "/"
   },
-  html: {
-    src: src + "/html/**/*.html",
-    dest: dest + "/html/"
-  },
   server: {
     src: dest,
     livereload: true,
     directoryListing: false,
     open: false,
-    port: 9000
+    port: 4000
   },
   production: {
     cssSrc: dest + '/css/*.css',
