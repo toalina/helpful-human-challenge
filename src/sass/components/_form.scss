@@ -9,7 +9,6 @@ form {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     font-size: 14px;
     font-family: $font-primary;
@@ -30,7 +29,6 @@ form {
     font-family: $font-primary;
     color: $color-primary;
   }
-
   @media only screen and (min-width: $breakpoint) {
     width: 615px;
   }

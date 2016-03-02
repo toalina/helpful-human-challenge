@@ -1,11 +1,9 @@
-
 .radio-wrapper {
   padding-top: 30px;
   display: block;
   margin: 0 auto;
   width: 320px;
   border: none;
-  /* One radio button per line */
   label {
     display: inline-block;
     cursor: pointer;
@@ -13,11 +11,9 @@
     font-size: 1em;
     margin-right: 1.5em;
   }
-
   [type="radio"] + span {
     display: inline-block;
   }
-  /* HTML5 Boilerplate accessible hidden styles */
   [type="radio"] {
     border: 0;
     clip: rect(0 0 0 0);
@@ -28,15 +24,12 @@
     position: absolute;
     width: 1px;
   }
-
-
-  /* the basic, unchecked style */
+  // Unchecked style
   [type="radio"] + span:before {
     content: '';
     display: inline-block;
     width: 1em;
     height: 1em;
-    // vertical-align: -0.25em;
     border-radius: 1em;
     border: 2px solid $color-primary;
     box-sizing: border-box;
@@ -44,14 +37,11 @@
     margin-right: 0.75em;
     transition: 0.2s ease all;
   }
-
-  /* the checked style using the :checked pseudo class */
+  // Checked style
   [type="radio"]:checked + span:before {
     border: 3px solid $color-secondary;
     background: #fff;
   }
-
-  /* never forget focus styling */
   [type="radio"]:focus + span:after {
     line-height: 1;
   }

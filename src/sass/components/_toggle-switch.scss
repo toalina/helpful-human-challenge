@@ -4,13 +4,11 @@
   padding-right: 0;
   padding-left: 0;
 }
-
 input.switch:empty {
   margin-left: -999px;
   margin-top: 0;
   margin-bottom: 0;
 }
-
 input.switch:empty ~ label {
   position: relative;
   float: left;
@@ -23,7 +21,6 @@ input.switch:empty ~ label {
   -ms-user-select: none;
   user-select: none;
 }
-
 input.switch:empty ~ label:before,
 input.switch:empty ~ label:after {
   position: absolute;
@@ -38,7 +35,6 @@ input.switch:empty ~ label:after {
   -webkit-transition: all 100ms ease-in;
   transition: all 100ms ease-in;
 }
-
 input.switch:empty ~ label:after {
   width: 22px;
   top: 0.1em;
@@ -47,11 +43,9 @@ input.switch:empty ~ label:after {
   background-color: #fff;
   border-radius: 50%;
 }
-
 input.switch:checked ~ label:before {
   background-color: #4783AD;
 }
-
 input.switch:checked ~ label:after {
   margin-left: 1.7em;
 }

@@ -3,7 +3,6 @@
   border: none;
   margin: 0 auto;
   width: 80%;
-
   @media only screen and (min-width: $breakpoint) {
     width: 550px;
   }
@@ -26,3 +25,4 @@ textarea {
     cursor: pointer;
   }
 }
+

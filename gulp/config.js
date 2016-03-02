@@ -19,6 +19,9 @@ module.exports = {
     src: src + "/index.html",
     dest: dest + "/"
   },
+  valid: {
+    src: src + '/index.html',
+  },
   server: {
     src: dest,
     livereload: true,
