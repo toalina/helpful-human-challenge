@@ -3,6 +3,10 @@ header {
   border-bottom: 1px solid $color-primary;
   padding-top: 2em;
   padding-bottom: 1.5em;
+  width: 100%;
+  @media only screen and (min-width: $breakpoint) {
+    width: 100%;
+  }
   .header-wrapper {
     h1 {
       text-align: center;
