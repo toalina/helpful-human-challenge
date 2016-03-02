@@ -1,7 +1,5 @@
-// Code for active state
-
+// Code for active input and textarea
 // when active, border-bottom blue
-
 // when inactive, border-bottom gray
 
 $(document).ready(function(){
@@ -20,5 +18,15 @@ $(document).ready(function(){
   });
 });
 
+
+$('.state').change(function () {
+  $(this).parent().find('.state').each(function () {
+    if (this.checked) {
+      $(this).attr('aria-selected', 'true');
+    } else {
+      $(this).removeAttr('aria-selected');
+    }
+  });
+});
 
 

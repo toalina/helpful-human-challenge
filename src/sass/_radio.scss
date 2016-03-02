@@ -3,35 +3,56 @@
   padding-top: 30px;
   display: block;
   margin: 0 auto;
-  width: 310px;
-
+  width: 320px;
+  border: none;
+  /* One radio button per line */
   label {
-    margin-right: 2em;
-    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 2.5;
+    font-size: 1em;
+    margin-right: 1.5em;
   }
 
-  label:last-child:after {
-    margin-right: 0;
+  [type="radio"] + span {
+    display: inline-block;
   }
-  input[type="radio"] {
-    display:none;
+  /* HTML5 Boilerplate accessible hidden styles */
+  [type="radio"] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
   }
-  input[type="radio"] + label span {
-    border-radius: 50%;
-    display:inline-block;
+
+
+  /* the basic, unchecked style */
+  [type="radio"] + span:before {
+    content: '';
+    display: inline-block;
     width: 1em;
     height: 1em;
-    margin:-1px 4px 0 0;
-    vertical-align:middle;
-    background: $color-primary;
-    border: 3px solid $color-primary;
+    // vertical-align: -0.25em;
+    border-radius: 1em;
+    border: 2px solid $color-primary;
     box-sizing: border-box;
-    cursor:pointer;
-  }
-  input[type="radio"]:checked + label span {
     background: $color-primary;
+    margin-right: 0.75em;
+    transition: 0.2s ease all;
+  }
+
+  /* the checked style using the :checked pseudo class */
+  [type="radio"]:checked + span:before {
     border: 3px solid $color-secondary;
   }
 
-
+  /* never forget focus styling */
+  [type="radio"]:focus + span:after {
+    line-height: 1;
+  }
 }
+

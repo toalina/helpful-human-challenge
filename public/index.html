@@ -36,15 +36,18 @@
           </div>
         </fieldset>
 
-
         <fieldset class="radio-wrapper">
-          <!-- Radio buttons -->
-          <input type="radio" id="daily" name="daily" value="daily">
-          <label for="daily"><span></span>Daily</label>
-          <input type="radio" id="weekly" name="weekly" value="weekly">
-          <label for="weekly"><span></span>Weekly</label>
-          <input type="radio" id="monthly" name="monthly" value="monthly">
-          <label for="monthly"><span></span>Monthly</label>
+          <label for="daily">
+            <input type="radio" value="daily" name="time" id="daily"> <span>Daily</span>
+          </label>
+
+          <label for="weekly">
+            <input type="radio" value="weekly" name="time" id="weekly"> <span>Weekly</span>
+          </label>
+
+          <label for="monthly">
+            <input type="radio" value="monthly"  name="time" id="monthly" checked> <span>Monthly</span>
+          </label>
         </fieldset>
 
         <div class="form-wrapper">
