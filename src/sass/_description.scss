@@ -1,0 +1,25 @@
+.dscp-wrapper {
+  padding-bottom: 75px;
+  border: none;
+  margin: 0 auto;
+  width: 80%;
+
+  @media only screen and (min-width: $breakpoint) {
+    width: 550px;
+  }
+}
+label[for="description"] {
+  color: $color-primary;
+  display: block;
+  font-size: 16px;
+}
+textarea {
+  margin-top: 0.5em;
+  width: 100%;
+  height: 106px;
+  border: 1px solid $color-primary;
+  border-radius: 0.4em;
+  @media only screen and (min-width: $breakpoint) {
+    width: 525px;
+  }
+}
