@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-
     <header>
       <nav>
         <span class="icon-menu"></span>
@@ -24,38 +23,33 @@
         </ul>
       </div>
     </header>
-
     <section>
+      <!-- Can tab through form from keyboard -->
       <form>
-
         <fieldset class="name-wrapper">
           <label for="classNname">Class Name</label>
           <div class="single-field">
             <input type="text" name="className" placeholder="Hello World">
           </div>
         </fieldset>
-
+        <!-- Accessible radio buttons // Select with arrow keys -->
         <fieldset class="radio-wrapper">
           <label for="daily">
-            <input type="radio" value="daily" name="time" id="daily"> <span>Daily</span>
+            <input type="radio" value="daily" name="time" id="daily"><span>Daily</span>
           </label>
-
           <label for="weekly">
-            <input type="radio" value="weekly" name="time" id="weekly"> <span>Weekly</span>
+            <input type="radio" value="weekly" name="time" id="weekly"><span>Weekly</span>
           </label>
-
           <label for="monthly">
-            <input type="radio" value="monthly"  name="time" id="monthly" checked> <span>Monthly</span>
+            <input type="radio" value="monthly"  name="time" id="monthly" checked><span>Monthly</span>
           </label>
         </fieldset>
-
         <div class="form-wrapper">
-
+          <!-- Toggle switch // Toggle with space bar -->
           <fieldset class="toggle-wrapper">
             <input type="checkbox" id="switch" name="switch" class="switch" checked>
             <label for="switch">Make this class private</label>
           </fieldset>
-
           <div class="single-field">
             <input type="text" placeholder="Room Location" name="roomLocation">
           </div>
@@ -71,23 +65,17 @@
           <div class="single-field">
             <input type="number" placeholder="Max Class Size" name="maxSize">
           </div>
-
         </div>
-
         <fieldset class="dscp-wrapper">
           <label for="description">Description</label>
           <textarea name="description" id="description"></textarea>
         </fieldset>
-
         <div class="button-wrapper">
           <button type="cancel" value="Cancel">Cancel</button>
           <button type="submit" value="Submit">Next Step</button>
         </div>
-
       </form> <!-- End of form -->
-
     </section>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>

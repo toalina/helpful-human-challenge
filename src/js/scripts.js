@@ -1,8 +1,5 @@
-// Code for active input and textarea
-// when active, border-bottom blue
-// when inactive, border-bottom gray
-
 $(document).ready(function(){
+  // Switch input between active/inactive states
   $("input").focus(function() {
     $(this).addClass("active");
   });
@@ -10,6 +7,7 @@ $(document).ready(function(){
     $(this).removeClass("active");
   });
 
+  // Switch textarea between active/inactive states
   $("textarea").focus(function() {
     $(this).addClass("active");
   });
@@ -17,12 +15,10 @@ $(document).ready(function(){
     $(this).removeClass("active");
   });
 
+  // Toggle breadcrumb active/inactive states
   $(".breadcrumbs li").hover(function() {
     $(this).toggleClass("active-crumb");
   });
-  // $(".breadcrumbs li").mouseout(function() {
-  //   $(this).removeClass("active-crumb");
-  // });
 });
 
 
