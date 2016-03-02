@@ -6,15 +6,19 @@
 
 $(document).ready(function(){
   $("input").focus(function() {
-    $(this).addClass("active-input");
+    $(this).addClass("active");
   });
   $("input").blur(function() {
-    $(this).removeClass("active-input");
+    $(this).removeClass("active");
+  });
+
+  $("textarea").focus(function() {
+    $(this).addClass("active");
+  });
+  $("textarea").blur(function() {
+    $(this).removeClass("active");
   });
 });
 
-// $(document).on('focus', 'input', function() {
 
-//   $(this).parent().addClass('active-input');
 
-// });

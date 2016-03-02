@@ -4,6 +4,14 @@ body {
 
 }
 
-*:focus {
+input:focus, textarea:focus {
   outline: none;
+}
+
+input.active:focus {
+  border-bottom: 2px solid $color-secondary;
+}
+
+textarea.active:focus {
+  border: 2px solid $color-secondary;
 }

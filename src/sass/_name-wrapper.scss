@@ -31,14 +31,10 @@
     height: 50px;
     line-height: 2em;
     border: none;
-    border-bottom: 2px solid $color-secondary;
+    border-bottom: 1px solid $color-primary;
     @media only screen and (min-width: $breakpoint) {
       width: 524px;
     }
-    &:focus {
-      border-bottom: 5px solid $color-secondary;
-    }
-
 
   }
   label {
