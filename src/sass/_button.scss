@@ -9,8 +9,11 @@
 button {
   width: 163px;
   height: 40px;
-  margin: 0.5em;
+  margin: 0.75em;
   border-radius: 0.3em;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
   &:hover {
     cursor: pointer;
   }

@@ -25,6 +25,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+[class^="icon-"]:hover, [class*=" icon-"]:hover {
+  color: $color-accent;
+  cursor: pointer;
+}
 .icon-menu:before {
   content: "\e900";
 
