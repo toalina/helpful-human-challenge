@@ -28,41 +28,51 @@
 
     <section>
       <form>
-        <label for="classNname">Class Name</label>
-        <input type="text" name="className">
-      </form>
 
-      <form>
-        <!-- Radio buttons -->
-        <input type="radio" id="daily" name="daily" value="daily">
-        <label for="daily">Daily</label>
-        <input type="radio" id="weekly" name="weekly" value="weekly">
-        <label for="weekly">Weekly</label>
-        <input type="radio" id="monthly" name="monthly" value="monthly">
-        <label for="monthly">Monthly</label>
-
-        <label class="switch switch-flat">
-          <input class="switch-input" type="checkbox" />
-          <span class="switch-label" data-on="On" data-off="Off"></span>
-          <span class="switch-handle"></span>
-        </label>
-
-        <input type="text" placeholder="Room Location" name="roomLocation">
-
-        <input type="text" placeholder="Class Type" name="classType">
-
-        <input type="text" placeholder="Maximum Age" name="maxAge">
-        <input type="text" placeholder="Minimum Age" name="minAge">
-        <input type="text" placeholder="Max Class Size" name="maxSize">
-
-        <label for="description">Description</label>
-        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        <fieldset class="name-wrapper">
+          <label for="classNname">Class Name</label>
+          <input type="text" name="className" placeholder="Hello World">
+        </fieldset>
 
 
-        <button type="cancel" value="Cancel">Cancel</button>
-        <button type="submit" value="Submit">Submit</button>
+        <fieldset class="radio-wrapper">
+          <!-- Radio buttons -->
+          <input type="radio" id="daily" name="daily" value="daily">
+          <label for="daily">Daily</label>
+          <input type="radio" id="weekly" name="weekly" value="weekly">
+          <label for="weekly">Weekly</label>
+          <input type="radio" id="monthly" name="monthly" value="monthly">
+          <label for="monthly">Monthly</label>
+        </fieldset>
 
-      </form>
+        <div class="form-wrapper">
+
+          <div class="toggle-wrapper">
+            <input type="checkbox" id="switch1" name="switch1" class="switch" checked>
+            <label for="switch1">Make this class private</label>
+          </div>
+
+          <!-- <div class="subform-wrapper"> -->
+            <input type="text" placeholder="Room Location" name="roomLocation">
+            <input type="text" placeholder="Class Type" name="classType">
+            <input type="text" placeholder="Maximum Age" name="maxAge">
+            <input type="text" placeholder="Minimum Age" name="minAge">
+            <input type="text" placeholder="Max Class Size" name="maxSize">
+          <!-- </div> -->
+        </div>
+
+        <fieldset class="dscp-wrapper">
+          <label for="description">Description</label>
+          <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <div class="button-wrapper">
+          <button type="cancel" value="Cancel">Cancel</button>
+          <button type="submit" value="Submit">Submit</button>
+        </div>
+
+      </form> <!-- End of form -->
+
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>

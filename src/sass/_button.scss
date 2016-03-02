@@ -1,0 +1,27 @@
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 1px solid $color-primary;
+  padding-top: 10px;
+  padding-bottom: 2em;
+}
+button {
+  width: 163px;
+  height: 40px;
+  margin: 0.5em;
+  border-radius: 0.3em;
+  &:hover {
+    cursor: pointer;
+  }
+}
+button[type="cancel"] {
+  background: #fff;
+  border: 1px solid $color-primary;
+  color: $color-dark-gray;
+}
+button[type="submit"] {
+  background: $color-accent;
+  border: none;
+  color: #fff;
+}

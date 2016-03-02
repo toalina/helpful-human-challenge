@@ -1,117 +1,49 @@
-/* Switch Flat
-==========================*/
-.switch-flat {
-  padding: 0;
-  background: #FFF;
-  background-image: none;
+input.switch:empty {
+  margin-left: -999px;
 }
-.switch-flat .switch-label {
-  background: #FFF;
-  border: solid 2px #eceeef;
-  box-shadow: none;
+
+input.switch:empty ~ label {
+  position: relative;
+  float: left;
+  line-height: 1.6em;
+  text-indent: 4em;
+  margin: 0.2em 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-.switch-flat .switch-label:after {
-  color: #0088cc;
+
+input.switch:empty ~ label:before,
+input.switch:empty ~ label:after {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+  width: 60px;
+  background-color: #C7C2B9;
+  border-radius: 1em;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
 }
-.switch-flat .switch-handle {
-  top: 6px;
-  left: 6px;
-  background: #dadada;
+
+input.switch:empty ~ label:after {
   width: 22px;
-  height: 22px;
-  box-shadow: none;
-}
-.switch-flat .switch-handle:before {
-  background: #eceeef;
-}
-.switch-flat .switch-input:checked ~ .switch-label {
-  background: #FFF;
-  border-color: #0088cc;
-}
-.switch-flat .switch-input:checked ~ .switch-handle {
-  left: 72px;
-  background: #0088cc;
-  box-shadow: none;
+  top: 0.1em;
+  bottom: 0.1em;
+  margin-left: 0.1em;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
-// /* ============================================================
-//   COMMON
-// ============================================================ */
-// .cmn-toggle {
-//   position: absolute;
-//   margin-left: -9999px;
-//   visibility: hidden;
-// }
-// .cmn-toggle + label {
-//   display: block;
-//   position: relative;
-//   cursor: pointer;
-//   outline: none;
-//   -webkit-user-select: none;
-//   -moz-user-select: none;
-//   -ms-user-select: none;
-//   user-select: none;
-// }
+input.switch:checked ~ label:before {
+  background-color: #4783AD;
+}
 
-// /* ============================================================
-//   SWITCH 2 - ROUND FLAT
-// ============================================================ */
-// input.cmn-toggle-round-flat + label {
-//   padding: 2px;
-//   width: 80px;
-//   height: 60px;
-//   background-color: #dddddd;
-//   -webkit-border-radius: 60px;
-//   -moz-border-radius: 60px;
-//   -ms-border-radius: 60px;
-//   -o-border-radius: 60px;
-//   border-radius: 60px;
-//   -webkit-transition: background 0.4s;
-//   -moz-transition: background 0.4s;
-//   -o-transition: background 0.4s;
-//   transition: background 0.4s;
-// }
-// input.cmn-toggle-round-flat + label:before, input.cmn-toggle-round-flat + label:after {
-//   display: block;
-//   position: absolute;
-//   content: "";
-// }
-// input.cmn-toggle-round-flat + label:before {
-//   top: 2px;
-//   left: 2px;
-//   bottom: 2px;
-//   right: 2px;
-//   background-color: #fff;
-//   -webkit-border-radius: 60px;
-//   -moz-border-radius: 60px;
-//   -ms-border-radius: 60px;
-//   -o-border-radius: 60px;
-//   border-radius: 60px;
-//   -webkit-transition: background 0.4s;
-//   -moz-transition: background 0.4s;
-//   -o-transition: background 0.4s;
-//   transition: background 0.4s;
-// }
-// input.cmn-toggle-round-flat + label:after {
-//   top: 4px;
-//   left: 4px;
-//   bottom: 4px;
-//   width: 52px;
-//   background-color: #dddddd;
-//   -webkit-border-radius: 52px;
-//   -moz-border-radius: 52px;
-//   -ms-border-radius: 52px;
-//   -o-border-radius: 52px;
-//   border-radius: 52px;
-//   -webkit-transition: margin 0.4s, background 0.4s;
-//   -moz-transition: margin 0.4s, background 0.4s;
-//   -o-transition: margin 0.4s, background 0.4s;
-//   transition: margin 0.4s, background 0.4s;
-// }
-// input.cmn-toggle-round-flat:checked + label {
-//   background-color: #8ce196;
-// }
-// input.cmn-toggle-round-flat:checked + label:after {
-//   margin-left: 60px;
-//   background-color: #8ce196;
-// }
+input.switch:checked ~ label:after {
+  margin-left: 2.1em;
+}
+
