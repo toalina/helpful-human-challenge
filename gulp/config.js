@@ -27,9 +27,9 @@ module.exports = {
     port: 4000
   },
   production: {
-    cssSrc: dest + '/css/*.css',
-    jsSrc: dest + '/js/*.js',
-    jsDest: dest + '/js/uglify.js',
-    dest: dest
+    cssSrc: dest + '/css/main.css',
+    jsSrc: dest + '/js/scripts.js',
+    jsDest: dest + '/js/',
+    cssDest: dest + '/css/'
   }
 };
