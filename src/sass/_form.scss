@@ -1,15 +1,20 @@
 .name-wrapper {
-  // border: 1px solid red;
-  width: 550px;
+  width: 100%;
   padding: 1em;
   margin: 0 auto;
   display: block;
   border: none;
+  @media only screen and (min-width: $breakpoint) {
+    width: 550px;
+  }
   input {
-    width: 524px;
+    width: 80%;
     height: 40px;
     border: none;
     border-bottom: 2px solid $color-secondary;
+    @media only screen and (min-width: $breakpoint) {
+      width: 524px;
+    }
   }
   label {
     color: $color-secondary;
@@ -19,19 +24,7 @@
   }
 }
 
-.radio-wrapper {
-  display: block;
-  margin: 0 auto;
-  width: 310px;
 
-  label {
-    margin-right: 2em;
-  }
-  label:last-child:after {
-    margin-right: 0;
-  }
-
-}
 
 .form-wrapper {
   margin: 0 auto;
@@ -71,17 +64,23 @@
    padding-bottom: 75px;
    border: none;
    margin: 0 auto;
-   width: 60%;
+   width: 80%;
+  @media only screen and (min-width: $breakpoint) {
+    width: 60%;
+  }
 }
 label[for="description"] {
   color: $color-primary;
   display: block;
 }
 textarea {
-  width: 525px;
+  width: 100%;
   height: 106px;
   border: 1px solid $color-primary;
   border-radius: 0.4em;
+  @media only screen and (min-width: $breakpoint) {
+      width: 525px;
+    }
 }
 
 

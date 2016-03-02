@@ -1,0 +1,35 @@
+.radio-wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 310px;
+
+  label {
+    margin-right: 2em;
+    font-size: 16px;
+  }
+
+  label:last-child:after {
+    margin-right: 0;
+  }
+  input[type="radio"] {
+    display:none;
+  }
+  input[type="radio"] + label span {
+    border-radius: 50%;
+    display:inline-block;
+    width: 1em;
+    height: 1em;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background: $color-primary;
+    border: 3px solid $color-primary;
+    box-sizing: border-box;
+    cursor:pointer;
+  }
+  input[type="radio"]:checked + label span {
+    background: $color-primary;
+    border: 3px solid $color-secondary;
+  }
+
+
+}
