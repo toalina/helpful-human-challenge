@@ -11,15 +11,13 @@
   <body>
 
     <header>
-      <nav> <!-- Collapsed nav -->
-        <ul>
-          <li>Create a Class</li>
-          <li>View Class List</li>
-        </ul>
+      <nav>
+        <span class="icon-menu"></span>
       </nav>
+
       <h1>Create a Class</h1>
-      <ul>
-        <li>Details</li>
+      <ul class="breadcrumbs">
+        <li class="active-crumb">Details</li>
         <li>Schedule</li>
         <li>Payment</li>
         <li>Confirm</li>
@@ -53,8 +51,8 @@
         <div class="form-wrapper">
 
           <fieldset class="toggle-wrapper">
-            <input type="checkbox" id="switch1" name="switch1" class="switch" checked>
-            <label for="switch1">Make this class private</label>
+            <input type="checkbox" id="switch" name="switch" class="switch" checked>
+            <label for="switch">Make this class private</label>
           </fieldset>
 
           <div class="single-field">
@@ -77,7 +75,7 @@
 
         <fieldset class="dscp-wrapper">
           <label for="description">Description</label>
-          <textarea name="description" id="description" cols="30" rows="10"></textarea>
+          <textarea name="description" id="description"></textarea>
         </fieldset>
 
         <div class="button-wrapper">

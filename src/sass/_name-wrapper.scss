@@ -35,7 +35,9 @@
     @media only screen and (min-width: $breakpoint) {
       width: 524px;
     }
-
+    &:hover {
+      cursor: pointer;
+    }
   }
   label {
     color: $color-secondary;

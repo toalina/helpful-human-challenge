@@ -1,19 +1,35 @@
 header {
-  border-top: 2px solid $color-accent;
+  border-top: 4px solid $color-accent;
   h1 {
     text-align: center;
     color: $color-accent;
     font-weight: 400;
     font-size: 24px;
   }
-  ul {
+  ul.breadcrumbs {
     text-align: center;
     list-style-type: none;
     padding: 0;
+    width: 100%;
+    color: $color-primary;
     li {
       display: inline-block;
-      margin: 1em;
-      font-size: 14;
+      margin: 0.5em;
+      font-size: 14px;
+      letter-spacing: 0.05em;
+      &:hover {
+        cursor: pointer;
+      }
     }
+    li:not(:last-child):after {
+      content: ' >';
+      padding-left: 1em;
+    }
+  }
+}
+.active-crumb {
+  color: $color-secondary;
+  &:after {
+    color: #000;
   }
 }

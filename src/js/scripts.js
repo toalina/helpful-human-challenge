@@ -16,17 +16,14 @@ $(document).ready(function(){
   $("textarea").blur(function() {
     $(this).removeClass("active");
   });
-});
 
-
-$('.state').change(function () {
-  $(this).parent().find('.state').each(function () {
-    if (this.checked) {
-      $(this).attr('aria-selected', 'true');
-    } else {
-      $(this).removeAttr('aria-selected');
-    }
+  $(".breadcrumbs li").hover(function() {
+    $(this).toggleClass("active-crumb");
   });
+  // $(".breadcrumbs li").mouseout(function() {
+  //   $(this).removeClass("active-crumb");
+  // });
 });
+
 
 

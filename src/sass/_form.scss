@@ -33,30 +33,16 @@
     width: 60%;
   }
   input {
-    // display: block;
     width: 250px;
     height: 30px;
     line-height: 1.5em;
     margin: 1em auto;
     border: none;
     border-bottom: 1px solid $color-primary;
+    &:hover {
+      cursor: pointer;
+    }
   }
-  // input:focus {
-  //   border-bottom: 2px solid $color-secondary;
-
-  // }
-
 }
-
-
-.toggle-wrapper {
-  width: 230px;
-  border: none;
-  // border: 1px solid green;
-}
-
-
-
-
 
 

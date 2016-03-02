@@ -1,7 +1,5 @@
-// Code for active state
-
+// Code for active input and textarea
 // when active, border-bottom blue
-
 // when inactive, border-bottom gray
 
 $(document).ready(function(){
@@ -18,6 +16,13 @@ $(document).ready(function(){
   $("textarea").blur(function() {
     $(this).removeClass("active");
   });
+
+  $(".breadcrumbs li").hover(function() {
+    $(this).toggleClass("active-crumb");
+  });
+  // $(".breadcrumbs li").mouseout(function() {
+  //   $(this).removeClass("active-crumb");
+  // });
 });
 
 
