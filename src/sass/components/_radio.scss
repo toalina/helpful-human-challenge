@@ -11,13 +11,15 @@
     font-size: 1em;
     margin-right: 1.5em;
   }
+  // All spans immediately after type radio
   [type="radio"] + span {
     display: inline-block;
   }
+  // Remove the whole input radio, replace with rect of nothing
   [type="radio"] {
     border: 0;
     clip: rect(0 0 0 0);
-    height: 1px;
+    height: 1px; // move it off screen
     margin: -1px;
     overflow: hidden;
     padding: 0;
@@ -25,6 +27,7 @@
     width: 1px;
   }
   // Unchecked style
+  // What we actually see as button
   [type="radio"] + span:before {
     content: '';
     display: inline-block;
